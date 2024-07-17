@@ -47,7 +47,7 @@
 
         .message {
             margin-bottom: 10px;
-            max-width: 75%;
+            max-width: 80%;
         }
 
         .message.user {
@@ -63,14 +63,14 @@
             align-self: flex-start;
             color: #333;
             border-radius: 15px;
-            padding: 10px 15px;
             word-wrap: break-word;
             text-align: left;
+            width: 100%;
+            max-width: 100%;
         }
 
         .message p {
             margin: 0;
-            max-width: 100%;
             word-wrap: break-word;
             font-size: 1em;
             padding: 10px 15px;
@@ -87,7 +87,6 @@
             color: #333;
             border-bottom-left-radius: 0;
         }
-
 
         .chat-footer {
             display: flex;
@@ -168,9 +167,7 @@
 <body>
     <div class="container">
         <div class="chat-header">ChatMaven</div>
-        <div class="chat-box" id="chat-box">
-
-        </div>
+        <div class="chat-box" id="chat-box"></div>
 
         <div class="chat-footer">
             <form id="chat-form">
